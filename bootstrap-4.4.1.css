@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
   background-size:cover;
 	animation: opensite;
 	animation-fill-mode: forwards;
-	animation-duration: 2s;
+	animation-duration: 3s;
 }
 @keyframes opensite {
 	0% {opacity: 0%;}
@@ -2877,7 +2877,9 @@ fieldset:disabled a.btn {
 	color: #fff;
   background-color: #343a40;
   border-color: #343a40;
-	opacity: .2;
+	animation: btnhover;
+	animation-delay: 3s;
+	animation-duration: 5s;
 }
 @keyframes btnhover {
 	0% {opacity: .2}
@@ -2885,8 +2887,8 @@ fieldset:disabled a.btn {
 }
 .btn-home:hover {
 	animation: btnhover;
-	animation-fill-mode: forwards;
-	animation-duration: .7s;
+	animation-fill-mode: backwards;
+	animation-duration: 5s;
 }
 .parag {
 	color: #FFFFF0;
@@ -4444,7 +4446,7 @@ input[type="button"].btn-block {
 
 .navbar-nav .dropdown-menu {
   position: static;
-  float: none;
+  float: left;
 }
 
 .navbar-text {
@@ -4800,7 +4802,6 @@ input[type="button"].btn-block {
   -ms-flex-direction: column;
   flex-direction:column;
   min-width: 0;
-  word-wrap: break-word;
   background-clip: border-box;
   border: 1px solid #fff;
   border-radius: 0.25rem;
@@ -4809,11 +4810,13 @@ input[type="button"].btn-block {
 	color: #fff;
 	height: 475px;
 	justify-content: center;
+	align-items: center;
+	float: none;
 }
 .btn-card {
   color: #fff;
   background-color: #343a40;
-  border-color: #343a40;
+  border-color: #333;
 	width:225px;
 	align-content:center;
 	justify-content: center;
