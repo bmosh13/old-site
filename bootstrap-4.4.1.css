@@ -4817,7 +4817,6 @@ input[type="button"].btn-block {
 	width:225px;
 	align-content:center;
 	justify-content: center;
-	float: none;align-self: center;
 }
 
 .btn-card:hover {
