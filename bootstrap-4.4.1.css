@@ -61,8 +61,7 @@ body {
   color: #212529;
   text-align: left;
   background-color: #333333;
-	color:
-	height:100%;
+	color: #fff;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -90,6 +89,13 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover;
+	animation: opensite;
+	animation-fill-mode: forwards;
+	animation-duration: 2s;
+}
+@keyframes opensite {
+	0% {opacity: 0%;}
+	100% {opacity: 100%;}
 }
 .bg-about {
   /* The image used */
@@ -4788,11 +4794,11 @@ input[type="button"].btn-block {
 }
 
 .card {
-  position: relative;
+  position:relative;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
-  flex-direction: column;
+  flex-direction:column;
   min-width: 0;
   word-wrap: break-word;
   background-clip: border-box;
@@ -4801,7 +4807,23 @@ input[type="button"].btn-block {
 	radius: 15px;
 	background-color: #818181;
 	color: #fff;
-	height: 450px;
+	height: 475px;
+	justify-content: center;
+}
+.btn-card {
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
+	width:225px;
+	align-content:center;
+	justify-content: center;
+	float: none;align-self: center;
+}
+
+.btn-card:hover {
+  color: #fff;
+  background-color: #23272b;
+  border-color: #1d2124;
 }
 .card:hover {
 	animation: chover;
