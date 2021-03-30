@@ -78,6 +78,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
+h1 {
+	text-shadow: 2px 2px black
+}
 .bg {
   /* The image used */
   background-image: url("https://raw.githubusercontent.com/bmosh13/photos/main/98368DF5-86FB-4CBE-B976-AA21F06FAB1A.jpeg");
@@ -2878,6 +2881,7 @@ fieldset:disabled a.btn {
   background-color: #343a40;
   border-color: #343a40;
 	animation: btnhover;
+	animation-delay: 3s;
 	animation-duration: 5s;
 }
 @keyframes btnhover {
