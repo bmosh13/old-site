@@ -95,7 +95,7 @@ h1 {
   background-size:cover;
 	animation: opensite;
 	animation-fill-mode: forwards;
-	animation-duration: 3s;
+	animation-duration: .35s;
 }
 @keyframes opensite {
 	0% {opacity: 0%;}
@@ -106,7 +106,7 @@ h1 {
   background-image: url("https://raw.githubusercontent.com/bmosh13/photos/main/91CABBBE-422B-4A3C-841A-3C67DB8C0A93.jpeg");
 	animation: opensite;
 	animation-fill-mode: forwards;
-	animation-duration: 3s;
+	animation-duration: .35s;
 
   /* Full height */
   height: 100%;
@@ -120,6 +120,9 @@ h1 {
 .bg-mywork {
   /* The image used */
   background-image: url("https://raw.githubusercontent.com/bmosh13/photos/main/E56552DA-5E3A-4912-9AD1-C9F0E210BE60.jpeg");
+  animation: opensite;
+  animation-fill-mode: forwards;
+  animation-duration: .35s;
 
   /* Full height */
   height: 100%;
@@ -130,9 +133,14 @@ h1 {
   background-size:cover;
 }
 
+.btn-btm {
+  position: absolute;
+  bottom: 0
+}
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  color: #333
 }
 
 abbr[title],
@@ -2894,10 +2902,10 @@ fieldset:disabled a.btn {
 }
 .parag {
 	color: #FFFFF0;
-	border: 1px solid #fff; 
+	border: 1px solid #fff;
 	radius: 5px;
 	padding:20px;
-		
+
 }
 
 .btn-dark:focus, .btn-dark.focus {
